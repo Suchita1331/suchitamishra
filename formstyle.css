@@ -1,0 +1,178 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: url(https://cdn.wallpapersafari.com/12/29/kbrCBc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    font-size: 11px;
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: rgb(92, 123, 190);
+    text-shadow: 0px 0px 10px blue;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: white;
+    transition: all .5s ease;
+    text-shadow: 0px 0px 10px white;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.formwraper {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 55%;
+    height: 500px;
+    background-color: transparent;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.formdiv {
+    width: 50%;
+    text-align: center;
+}
+
+.socialbtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: lavender;
+    margin: 5px;
+    line-height: 30px;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.text {
+    font-size: small;
+}
+
+.ordiv {
+    width: 100%;
+    margin-top: 35px;
+    top: -16px;
+    position: relative;
+    justify-content: center;
+}
+
+.formgroup {
+    width: 100%;
+    position: relative;
+}
+
+.formgroup input {
+    margin-top: 5px;
+    width: 93%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.formgroup i {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    color: grey;
+}
+
+input::placeholder {
+    position: relative;
+    left: 20px;
+}
+
+.checkbox {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    width: 50%;
+    padding: 3%;
+    background-color: lavender;
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.btn:hover,
+.icon:hover {
+    background: aqua;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width: 1000px) {
+    .formwraper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formdiv {
+        width: 90%;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
